@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-/*function main- prints exactly "Programming is like building a multilingual puzzle*/
+/*function main- prints exactly 
+ * "Programming is like building a multilingual puzzle*/
 
 int main(void)
 {
