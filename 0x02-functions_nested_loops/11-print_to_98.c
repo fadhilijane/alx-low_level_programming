@@ -9,19 +9,34 @@
 
 void print_to_98(int n)
 {
-	if (n > 0)
+	if (n < 98)
 	{
-		_putchar ('+');
-		return (1);
+		while (n <= 98)
+		{
+			printf("%d", n);
+			if (n != 98)
+			{
+				printf(", ");
+			}
+			n++;
+		}
 	}
-	else if (n == 0)
+	else if (n > 98)
 	{
-		_putchar ('0');
-		return (0);
+		while (n >= 98)
+		{
+			printf("%d", n);
+			if (n != 98)
+			{
+				printf(", ");
+			}
+			n--;
+		}
+
 	}
 	else
 	{
-		_putchar ('-');
-		return (-1);
+		printf("98");
 	}
+	printf("\n");
 }
