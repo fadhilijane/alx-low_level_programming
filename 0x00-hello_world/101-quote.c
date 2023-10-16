@@ -8,10 +8,11 @@
 
 int main(void)
 {
-	const char *sentence = "and that piece of art is \
-useful\" - Dora Korpar, 2015-10-19";
-	size_t len = strlen(sentence);
+	const char *sentence;
+	size_t len;
 
-	write(1, sentence, len);
+	sentence = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+	len = strlen(sentence);
+	write(STDOUT_FILENO, sentence, len);
 	return (1);
 }
