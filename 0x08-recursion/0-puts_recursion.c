@@ -8,17 +8,11 @@
 
 void _puts_recursion(char *s)
 {
-	/**
-	 * if the pointer index reaches the null terminator,
-	 *  newline & return
-	 */
 	if (*s == '\0')
 	{
 		_putchar('\n');
 		return;
 	}
-	/* otherwise, print the current array index */
 	_putchar(*s);
-	/* call function */
-	_puts_recursion(s + 1);
+	return (_puts_recursion(s + 1));
 }
