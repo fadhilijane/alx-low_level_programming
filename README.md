@@ -1,1 +1,1 @@
-This is the beginnig of understanding C language
+This is the beginning of understanding C language
